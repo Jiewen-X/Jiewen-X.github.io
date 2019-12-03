@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	{% if site.description %}
+	<meta name="description" content="{{ page.description }}" />
+	{% endif %}
+
+	{% if page.title %}
+    <title>{{ page.title }}</title>
+    {% elsif layout.title %}
+    <title>{{ layout.title }}</title>
+    {% elsif page.name %}
+    <title>{{ page.name }}</title>
+    {% else %}
+    <title>{{ site.title }}</title>
+    {% endif %}
+
+	{% if page.canonical_url %}
+    <link rel="canonical" href="{{ site.url }}{{ page.canonical_url }}" />
+	{% else %}
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+	{% endif %}
+
+    {% if page.stylesheets %}
+        {% for url in page.stylesheets %}
+        <link rel="stylesheet" href="{{ url }}">
+        {% endfor %}
+    {% endif %}
+    {% if page.scripts %}
+        {% for url in page.scripts %}
+        <script src="{{ url }}"></script>
+        {% endfor %}
+    {% endif %}
+
+    {% unless page.fontawesome == false or site.fontawesome == false %}
+    <script src="{{ site.fontawesome }}" crossorigin="anonymous"></script>
+    {% endunless %}
+
+	<link rel="stylesheet" href="/assets/css/header.css" />
+	<link rel="stylesheet" href="/assets/css/footer.css" />
+	<link rel="stylesheet" href="/assets/css/home.css" />
+</head>
+<body>
+	{% unless page.include_header == false or layout.include_header == false %}
+		{% include header.html %}
+	{% endunless %}
+
+	<main>
+		{{ content }}
+	</main>
+
+	{% unless page.include_footer == false or layout.include_footer == false %}
+		{% include footer.html %}
+	{% endunless %}
+</body>
+</html>

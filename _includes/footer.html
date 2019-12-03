@@ -1,0 +1,24 @@
+<footer id="navigation">
+    <section id="contact">
+        <h2>Contact me</h2>
+        <p>
+            <b>Email:</b><a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </p>
+        <p>
+            <b>Address:</b>May be emitted
+        </p>
+    </section>
+    <section id="links">
+        <a class="circle" href="mailto:{{ site.email }}">
+            <span class="icon far fa-envelope"></span>
+        </a>
+        <a class="cirlce" href="https://github.com/{{ site.github_username }}">
+            <span class="icon fab fa-github-alt"></span>
+        </a>
+    </section>
+    <section id="msg">
+        {% for msg in site.messages %}
+        <p>{{ msg | markdownify}}</p>
+        {% endfor %}
+    </section>
+</footer>
