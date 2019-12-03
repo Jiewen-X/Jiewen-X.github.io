@@ -1,4 +1,11 @@
-<header class="header">
-    <div class="navbar">
+<header class="navbar navbar-expand sticky-top {{ page.color }} {{ layout.color }} {{ page.classname }} {{ layout.classname }}">
+    <a class="navbar-brand">{{ site.title }}</a>
+    <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="/">Home</a>
+        <a class="nav-item nav-link" href="/posts">Researches</a>
+        <a class="nav-item nav-link" href="/about">About</a>
+        {% for link in site.extlinks %}
+        <a class="nav-item nav-link" href="{{ link.url }}">{{ link.name }}</a>
+        {% endfor %}
     </div>
 </header>

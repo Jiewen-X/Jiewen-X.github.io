@@ -1,0 +1,41 @@
+main {
+    max-width: 50em;
+    margin: auto;
+    padding: 6em 2em;
+}
+.canteloupe {
+    background-color: rgb(249, 192, 88);
+}
+.canteloupe .icon {
+    color: rgb(249, 192, 88);
+}
+.lime {
+    background-color: rgb(144, 194, 70);
+}
+.lime .icon {
+    color: rgb(144, 194, 70);
+}
+.grape {
+    background-color: rgb(77, 85, 148);
+}
+.grape {
+    color: rgb(77, 85, 148);
+}
+.blueberry {
+    background-color: rgb(40, 137, 187);
+}
+.blueberry .icon {
+    color: rgb(40, 137, 187);
+}
+.strawberry {
+    background-color: rgb(241, 95, 91);
+}
+.strawberry .icon {
+    color: rgb(241, 95, 91);
+}
+.dragonfruit {
+    background-color: rgb(211, 16, 134);
+}
+.dragonfruit .icon {
+    color: rgb(211, 16, 134);
+}

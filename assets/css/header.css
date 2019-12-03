@@ -1,0 +1,11 @@
+header {
+    background-color: rgb(144, 194, 70); /* @lime */
+    color: white;
+}
+header .icon {
+    color: rgb(144, 194, 70); /* @lime */
+    fill: currentColor;
+}
+header a {
+    color: white;
+}

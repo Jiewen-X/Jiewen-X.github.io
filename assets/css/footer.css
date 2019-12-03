@@ -1,0 +1,105 @@
+footer {
+    color: white;
+    margin-top: 2em;
+    padding: 1.5em 1.5em;
+    position: relative;
+    text-align: center;
+}
+@media (min-width: 30em) {
+    footer {
+        padding: 1.5em 2em;
+    }
+}
+
+footer a,
+footer a:hover,
+footer a:active,
+footer a:focus {
+    color: inherit;
+    text-decoration: underline;
+}
+footer a {
+    text-decoration: none;
+}
+footer section {
+    max-width: 50em;
+    margin: 2em auto;
+}
+footer section p:last-child {
+    margin-bottom: 0;
+}
+footer section h2,
+footer section h3 {
+    color: inherit;
+}
+footer section a {
+    color: inherit;
+    text-decoration: underline;
+    display: inline-block; /* @avoid-break */
+}
+
+footer .action {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+footer .action a {
+    text-transform: none;
+}
+
+footer .action a,
+footer .action button {
+    background: white !important;
+    color: black !important;
+    border-color: white !important;
+    text-transform: unset;
+}
+footer .action a:hover,
+footer .action a:active,
+footer .action a:focus,
+footer .action button:hover,
+footer .action button:active,
+footer .action button:focus {
+    background: white !important;
+    background: rgba(255, 255, 255, 0.8) !important;
+    color: black !important;
+    border-color: white !important;
+}
+
+footer #links a {
+    margin: 0 0.75em;
+    text-align: center;
+    /* font-size: 20px; */
+}
+footer #links .circle {
+    display: inline-block;
+    background-color: white;
+    border-radius: 45%;
+    width: 3em;
+    height: 3em;
+    padding: .5em;
+}
+footer #links .icon {
+    font-size: 1.6em !important;
+    line-height: 1.25em;
+    width: 1.25em;
+    height: 1.25em;
+    margin: 0;
+}
+
+footer {
+    background-color: rgb(144, 194, 70); /* @lime */
+}
+footer .icon {
+    color: rgb(144, 194, 70); /* @lime */
+    fill: currentColor;
+}
+
+footer a .icon {
+    transition: all 0.5s;
+}
+footer a:hover  .icon,
+footer a:active .icon,
+footer a:focus  .icon {
+    color: black;
+}
