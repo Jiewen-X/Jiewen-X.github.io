@@ -16,13 +16,13 @@ color: blueberry
 # Profile
 
 ## Professional Experiences
-- **Sep. 2016 - Present:** Bachelor of Science in Material Science and Engineering
+- **Sep. 2016 - Present:** Bachelor of Engineering in Material Science and Engineering
 - **Nov. 2018:** exchange ...
 - **Nov. 2018:** visiting ...
 
 ## Education
-- GPA: **to be filled**
-- Ranking: **to be filled**
+- GPA: **3.90**
+- Ranking: **1/136**
 
 ## Awards & Honers
 - **Nov. 2018:** champion of ...
