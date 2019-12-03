@@ -14,6 +14,8 @@ color: blueberry
 *Welcome to my home page!*
 
 # Profile
+<a img src="/assets/images/Jiewen Xiao.jpg">
+</a>
 
 ## Professional Experiences
 - **Sep. 2016 - Present:** Bachelor of Engineering in Material Science and Engineering
